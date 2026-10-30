@@ -35,16 +35,19 @@
 </ul>
 </h5>
 <h2><i>Написать в ЛС:</i></h2>
+<div class="message">
 <a href="https://t.me/Gap0135" target="_blank">
 <img src="Иконки/ТГ.png" alt="Telegram" width="70" height="70" loading="lazy">
 </a>
 <a href="https://discord.com/users/1365711203913171078" target="_blank">
 <img src="Иконки/ДС.png" alt="Discord" width="70" height="70" loading="lazy">
 </a>
+</div>
 <h2><i>Другое:</i></h2>
 <h5><i>Увлекаюсь физикой, космосом и прочим.
 Сижу на андроиде и быстрая реакция стоит на кита. (Хз зачем вам это знать.)</i></h5>
 <h2><i>Соц. Сети:</i></h2>
+<div class="social">
 <a href="https://youtube.com/channel/UCpGEmXW9sFVEcyaMRA70PkQ?si=ONGUpWXsFAr8Spnd" target="_blank">
 <img src="Иконки/Ютуб.png" alt="YouTube" width="70" height="70" loading="lazy">
 </a>
@@ -71,6 +74,7 @@
 </a>
 <a href="mailto:oldhorizonsofficial@gmail.com">
 <img src="Иконки/Почта.png" alt="Gmail" width="70" height="70" loading="lazy">
+</div>
 </a>
 <h2><i>Скачать SP:</i></h2>
 <h5>
@@ -101,11 +105,28 @@
 <style>
  html, body {
     position: relative;
+    text-align: center;
 }
 .container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
 }
 body::before {
   content: "";
@@ -133,6 +154,8 @@ img, a {
   -webkit-tap-highlight-color: transparent;
 }
 img {
+  display: block;
+  margin: 10px auto;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
