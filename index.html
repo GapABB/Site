@@ -105,9 +105,8 @@
 <li><a href="https://play.google.com/store/apps/details?id=com.joyjetgames.ragbollstickimanssanbdox">• Скачать SRP</a></li>
 </h4>
 </ul>
-<button onclick="playSound()">Музыка</button>
 </main>
-<footer>
+<footer onclick="playSound()" class="text-trigger">
 <h4><i>Это конец.....</i></h4>
 <h5><i>√ Прøбе́л 2026-2026</i></h5>
 </footer>
@@ -187,6 +186,32 @@ body {
 a:active {
   transform: scale(0.95);
   color: #6E00FF80;
+}
+.music-btn {
+  padding: 10px 26px;
+  margin: 20px auto;
+  display: block;
+  font-family: "Vollkorn", serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #943EFF;
+
+  background: rgba(148, 62, 255, 0.1);
+  border: 2px solid #943EFF80;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.music-btn:hover,
+.music-btn:active {
+  background: rgba(148, 62, 255, 0.25);
+  border-color: #943EFF;
+  color: #fff;
+  transform: scale(0.97);
 }
 </style>
 <script>
